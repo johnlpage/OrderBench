@@ -43,14 +43,14 @@ public class TestRunner implements Runnable {
 		test = t;
 		this.warmup = warmup;
 		this.subtest = st;
-		OPS_TO_TEST = options.getInteger("itterations");
+		OPS_TO_TEST = options.getInteger("iterations");
 		times = new double[OPS_TO_TEST];
 	}
 
 	void runTest(List<SchemaTest> tests, TestOptions options) {
 
 		final int NTHREADS = options.getInteger("threads", 20); /* Optimal here is actually a key tunable */
-		OPS_TO_TEST = options.getInteger("itterations");
+		OPS_TO_TEST = options.getInteger("iterations");
 		for (SchemaTest s : tests) {
 
 			logger.info("Warmup");

@@ -1,0 +1,7 @@
+{
+    "models": "SingleTableTest,MultiTableTest",
+    "customers": 100,
+    "iterations": 4,
+    "products": 100,
+    "size": 400
+}

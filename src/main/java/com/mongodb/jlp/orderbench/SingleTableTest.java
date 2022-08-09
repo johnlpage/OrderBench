@@ -28,7 +28,7 @@ public class SingleTableTest implements SchemaTest {
 
 	Logger logger;
 	MongoClient mongoClient;
-	String rawCollectionName = "data"; // TODO - pull thesee out to the TestOptions class
+	String rawCollectionName = "data"; // TODO - pull these out to the TestOptions class
 	String dbName = "orderbench";
 	MongoCollection<Document> singleTable;
 	RecordFactory recordFactory = new RecordFactory();
